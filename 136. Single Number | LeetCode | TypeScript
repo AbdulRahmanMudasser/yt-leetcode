@@ -1,0 +1,21 @@
+function singleNumber(nums: number[]): number {
+    // const set = new Set<number>();
+
+    // nums.forEach(num => {
+    //     if (set.has(num)) {
+    //         set.delete(num);
+    //     } else {
+    //         set.add(num);
+    //     }
+    // });
+
+    // return set.values().next().value;
+
+    let result = 0;
+
+    for (let num of nums) {
+        result = num ^ result;
+    }
+
+    return result;
+};
