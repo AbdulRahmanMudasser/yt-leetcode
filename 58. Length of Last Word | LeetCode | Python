@@ -1,0 +1,18 @@
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        # length = 0
+        # found_word = False
+
+        # for i in range(len(s) -1, -1, -1):
+        #     if s[i] != ' ':
+        #         length += 1ac
+        #         found_word = True
+
+        #     elif found_word:
+        #         break
+
+        # return length
+
+        words = s.strip().split(' ')
+        
+        return 0 if len(words) == 0 else len(words[-1])
