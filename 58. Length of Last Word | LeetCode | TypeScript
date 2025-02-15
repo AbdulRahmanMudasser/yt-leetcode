@@ -1,0 +1,19 @@
+function lengthOfLastWord(s: string): number {
+    // let length: number = 0;
+    // let foundWord: boolean = false;
+
+    // for (let i = s.length - 1; i >= 0; i--) {
+    //     if (s[i] !== ' ') {
+    //         length++;
+    //         foundWord = true;
+    //     } else if (foundWord) {
+    //         break;
+    //     }
+    // }
+
+    // return length;
+
+    const words: string[] = s.trim().split(' ');
+    
+    return words.length === 0 ? 0 : words[words.length - 1].length;
+};
